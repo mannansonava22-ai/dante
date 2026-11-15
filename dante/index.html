@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dante.&lt;3 — Discord Developer, Server Architect &amp; Bot Creator</title>
+  <meta name="description" content="Dante.<3 (manii_.0) — Discord developer and all-rounder with 2–3 years of experience building bots, servers, custom systems, security setups and server identities." />
+  <meta name="author" content="Dante.<3" />
+  <meta name="keywords" content="Discord developer, Discord bot developer, Discord server setup, server architect, anti-raid, Discord designer, manii_.0" />
+  <meta name="theme-color" content="#07060b" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dante.<3" />
+  <meta property="og:title" content="Dante.<3 — Discord Developer, Server Architect &amp; Bot Creator" />
+  <meta property="og:description" content="Discord bots, servers, custom systems and design — built end to end by an independent Discord all-rounder." />
+  <meta property="og:image" content="assets/avatar.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Dante.<3 — Discord Developer" />
+  <meta name="twitter:description" content="Discord bots, servers, custom systems and design — built end to end." />
+  <meta name="twitter:image" content="assets/avatar.jpg" />
+  <!-- <link rel="canonical" href="https://your-domain.com/" /> -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/avatar.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dante",
+      "alternateName": "manii_.0",
+      "jobTitle": "Discord Developer, Server Architect & Bot Creator",
+      "description": "Independent Discord developer building bots, servers, custom systems and server identities.",
+      "email": "mailto:mannansonava22@gmail.com",
+      "image": "assets/avatar.jpg",
+      "knowsAbout": [
+        "Discord bot development",
+        "Discord server setup",
+        "Discord server security",
+        "Anti-raid protection",
+        "Discord server design"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--1"></span>
+    <span class="ambient__orb ambient__orb--2"></span>
+    <span class="ambient__orb ambient__orb--3"></span>
+    <span class="ambient__grid"></span>
+  </div>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="hdr" id="hdr">
+    <div class="hdr__inner shell">
+      <a class="logo" href="#home" aria-label="Dante — home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7.5-4.6-7.5-9.7A4.3 4.3 0 0 1 12 7.9a4.3 4.3 0 0 1 7.5 2.9c0 5.1-7.5 9.7-7.5 9.7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="logo__text" data-bind="identity.displayName">Dante.&lt;3</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link is-active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#services">Services</a>
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#journey">Journey</a>
+        <a class="nav__link" href="#community">Community</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="hdr__actions">
+        <span class="hdr__status" id="hdrStatus">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-bind="identity.availability.short">Open for work</span>
+        </span>
+        <a class="btn btn--primary btn--sm" href="#contact">Let's talk</a>
+        <button class="burger" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  </header>
+
+  <!-- ============================= MOBILE NAV ============================= -->
+  <div class="mnav" id="mobileNav" aria-hidden="true">
+    <div class="mnav__inner shell">
+      <p class="mnav__label">Navigate</p>
+      <nav class="mnav__links" aria-label="Mobile">
+        <a href="#home"><span>01</span>Home</a>
+        <a href="#about"><span>02</span>About</a>
+        <a href="#skills"><span>03</span>Skills</a>
+        <a href="#services"><span>04</span>Services</a>
+        <a href="#work"><span>05</span>Work</a>
+        <a href="#journey"><span>06</span>Journey</a>
+        <a href="#community"><span>07</span>Community</a>
+        <a href="#contact"><span>08</span>Contact</a>
+      </nav>
+      <div class="mnav__foot">
+        <p class="status-pill status-pill--sm">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-bind="identity.availability.label">Available for new projects</span>
+        </p>
+        <a class="mnav__mail" href="mailto:mannansonava22@gmail.com" data-bind="identity.email" data-mail>mannansonava22@gmail.com</a>
+        <div class="mnav__socials" data-socials="compact"></div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="home">
+      <div class="hero__aura" aria-hidden="true"></div>
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <p class="status-pill" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <span data-bind="identity.availability.label">Available for new projects</span>
+          </p>
+
+          <h1 class="hero__title" data-reveal>
+            <span data-bind="hero.greeting">Hey, I'm</span>
+            <span class="grad" data-bind="identity.displayName">Dante.&lt;3</span>
+          </h1>
+
+          <p class="hero__roles" data-roles data-reveal>
+            <span>Discord Developer</span><i aria-hidden="true"></i>
+            <span>Server Architect</span><i aria-hidden="true"></i>
+            <span>Bot Creator</span>
+          </p>
+
+          <p class="hero__intro" data-bind="hero.intro" data-reveal>
+            I build Discord bots, servers and custom systems — clean architecture, careful design and the small details that make a community feel premium.
+          </p>
+
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--primary" href="#work">
+              Explore my work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+
+          <ul class="hero__chips" data-chips data-reveal></ul>
+
+          <dl class="hero__facts" data-facts="hero.facts" data-reveal></dl>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="profile" data-tilt>
+            <div class="profile__orbit" aria-hidden="true"></div>
+            <div class="profile__card">
+              <div class="profile__frame">
+                <img src="assets/avatar.jpg" alt="Dante's Discord avatar" width="736" height="736" fetchpriority="high" data-avatar />
+                <span class="profile__sheen" aria-hidden="true"></span>
+              </div>
+              <div class="profile__meta">
+                <div>
+                  <p class="profile__name" data-bind="identity.displayName">Dante.&lt;3</p>
+                  <p class="profile__handle">@<span data-bind="identity.handle">manii_.0</span></p>
+                </div>
+                <span class="profile__rolechip" data-bind="identity.role">Discord All-Rounder</span>
+              </div>
+            </div>
+
+            <span class="float-chip float-chip--role">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12a4 4 0 1 1 4 4M16 12a4 4 0 1 0-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span data-bind="identity.role">Discord All-Rounder</span>
+            </span>
+
+            <span class="float-chip float-chip--status" id="heroStatus">
+              <span class="dot" aria-hidden="true"></span>
+              <span data-bind="identity.availability.short">Open for work</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about section">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+        Scroll to explore
+      </a>
+    </section>
+
+    <!-- ============================= ABOUT ============================= -->
+    <section class="section" id="about">
+      <div class="shell">
+        <header class="sec-head">
+          <p class="sec-eyebrow" data-reveal><span>01</span> About</p>
+          <h2 class="sec-title" data-reveal data-bind="about.heading">I build communities that feel designed, not assembled.</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__copy">
+            <div data-list="about.paragraphs"></div>
+            <p class="about__sign" data-reveal>— <span data-bind="identity.displayName">Dante.&lt;3</span></p>
+          </div>
+
+          <aside class="glass about__card" data-reveal>
+            <p class="about__k">At a glance</p>
+            <dl class="about__facts" data-facts="about.facts"></dl>
+            <p class="about__note" data-bind="about.note">Built around your community — not a template with your logo on it.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SKILLS ============================= -->
+    <section class="section" id="skills">
+      <div class="shell">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="sec-eyebrow" data-reveal><span>02</span> Skills</p>
+            <h2 class="sec-title" data-reveal>Everything your server needs, from one developer.</h2>
+          </div>
+          <p class="sec-lead" data-reveal>
+            Bots, servers, security and design — handled together instead of passed between five people.
+          </p>
+        </header>
+
+        <div class="skills" data-skills></div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICES ============================= -->
+    <section class="section" id="services">
+      <div class="shell">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="sec-eyebrow" data-reveal><span>03</span> Services</p>
+            <h2 class="sec-title" data-reveal>What I can build for you.</h2>
+          </div>
+          <p class="sec-lead" data-reveal>
+            Clear scope, clean delivery, and something you can still maintain a year from now.
+          </p>
+        </header>
+
+        <div class="services" data-services></div>
+      </div>
+    </section>
+
+    <!-- ============================= WORK ============================= -->
+    <section class="section" id="work">
+      <div class="shell">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="sec-eyebrow" data-reveal><span>04</span> Work</p>
+            <h2 class="sec-title" data-reveal>Projects &amp; builds.</h2>
+          </div>
+          <p class="sec-lead" data-reveal>
+            Bots, servers, systems and designs — browse by type. Placeholder slots are ready for your real case studies.
+          </p>
+        </header>
+
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+
+        <div class="projects" id="projects" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============================= JOURNEY ============================= -->
+    <section class="section" id="journey">
+      <div class="shell">
+        <div class="journey">
+          <aside class="journey__head">
+            <p class="sec-eyebrow" data-reveal><span>05</span> Journey</p>
+            <h2 class="sec-title" data-reveal>2–3 years of Discord, told in phases.</h2>
+            <p class="journey__note" data-reveal>
+              No company names, no invented dates — just the path from learning the platform to building for other communities.
+            </p>
+            <div class="journey__meter" data-reveal>
+              <span class="journey__count"><b id="journeyNum">01</b><i>/ 04</i></span>
+              <span class="journey__bar"><i id="journeyBar"></i></span>
+            </div>
+          </aside>
+
+          <div class="timeline" id="timeline" data-timeline>
+            <span class="timeline__rail" aria-hidden="true"><i id="timelineFill"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= COMMUNITY ============================= -->
+    <section class="section section--community" id="community">
+      <div class="shell">
+        <header class="sec-head sec-head--row">
+          <div>
+            <p class="sec-eyebrow" data-reveal><span>06</span> Community</p>
+            <h2 class="sec-title" data-reveal>Join my Discord server.</h2>
+          </div>
+          <p class="sec-lead" data-reveal>
+            A place for builds, ideas and conversations — the same care I bring to every community I work with.
+          </p>
+        </header>
+
+        <div class="community glass" data-reveal data-spotlight>
+          <span class="community__glow" aria-hidden="true"></span>
+          <span class="community__grid" aria-hidden="true"></span>
+
+          <div class="community__main">
+            <span class="community__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8.6 6.4a14 14 0 0 1 6.8 0M7.1 18.5c-1.3-1.9-2.2-4.2-2.4-6.8.9-1.1 2-2 3.2-2.5l.7 1.1a11 11 0 0 1 6.8 0l.7-1.1c1.2.5 2.3 1.4 3.2 2.5-.2 2.6-1.1 4.9-2.4 6.8M9.5 14.6h.01M14.5 14.6h.01" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+
+            <p class="community__chip" data-bind="community.label">Discord community</p>
+            <h3 class="community__name" data-bind="community.serverName">Zepto</h3>
+            <p class="community__desc" data-bind="community.description">
+              Join my Discord community and be part of the experience.
+            </p>
+
+            <a class="community__vanity" data-invite href="https://discord.gg/zepto" target="_blank" rel="noopener noreferrer">
+              <span data-bind="community.vanity">discord.gg/zepto</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </div>
+
+          <div class="community__panel">
+            <p class="community__k" data-bind="community.inviteLabel">Invite</p>
+            <div class="community__server">
+              <span class="community__badge" aria-hidden="true">Z</span>
+              <span class="community__server-copy">
+                <strong data-bind="community.serverName">Zepto</strong>
+                <span>Discord server</span>
+              </span>
+            </div>
+
+            <a class="btn btn--primary community__cta" data-invite href="https://discord.gg/zepto" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="i-discord"><path d="M8.6 6.4a14 14 0 0 1 6.8 0M7.1 18.5c-1.3-1.9-2.2-4.2-2.4-6.8.9-1.1 2-2 3.2-2.5l.7 1.1a11 11 0 0 1 6.8 0l.7-1.1c1.2.5 2.3 1.4 3.2 2.5-.2 2.6-1.1 4.9-2.4 6.8M9.5 14.6h.01M14.5 14.6h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-bind="community.cta">Join My Discord Server</span>
+            </a>
+
+            <p class="community__hint" data-bind="community.hint">Opens the invite in a new tab.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section section--contact" id="contact">
+      <div class="shell">
+        <div class="contact glass" data-reveal>
+          <div class="contact__glow" aria-hidden="true"></div>
+
+          <div class="contact__grid">
+            <div class="contact__intro">
+              <p class="sec-eyebrow"><span>07</span> Contact</p>
+              <h2 class="contact__title">
+                <span data-bind="contact.heading">Let's Build Something Great Together.</span>
+              </h2>
+              <p class="contact__blurb" data-bind="contact.blurb">
+                Have a project in mind or need help with your Discord community? Let's connect and bring your ideas to life.
+              </p>
+
+              <div class="contact__channels">
+                <div class="contact__row">
+                  <span class="contact__k">Discord</span>
+                  <strong class="contact__v">@<span data-bind="identity.handle">manii_.0</span></strong>
+                  <button class="copy-ic" type="button" data-copy="identity.handle" aria-label="Copy Discord username">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </button>
+                </div>
+                <div class="contact__row">
+                  <span class="contact__k">Email</span>
+                  <a class="contact__v" href="mailto:mannansonava22@gmail.com" data-bind="identity.email" data-mail>mannansonava22@gmail.com</a>
+                  <button class="copy-ic" type="button" data-copy="identity.email" aria-label="Copy email address">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </button>
+                </div>
+                <div class="contact__row">
+                  <span class="contact__k">Availability</span>
+                  <strong class="contact__v contact__v--status"><span class="dot" aria-hidden="true"></span><span data-bind="identity.availability.short">Open for work</span></strong>
+                  <span class="contact__side" data-bind="identity.experience">2–3 years</span>
+                </div>
+              </div>
+
+              <div class="contact__actions">
+                <button class="btn btn--primary" type="button" id="discordBtn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="i-discord"><path d="M8.6 6.4a14 14 0 0 1 6.8 0M7.1 18.5c-1.3-1.9-2.2-4.2-2.4-6.8.9-1.1 2-2 3.2-2.5l.7 1.1a11 11 0 0 1 6.8 0l.7-1.1c1.2.5 2.3 1.4 3.2 2.5-.2 2.6-1.1 4.9-2.4 6.8M9.5 14.6h.01M14.5 14.6h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Contact Me on Discord
+                </button>
+                <a class="btn btn--ghost" id="emailBtn" href="mailto:mannansonava22@gmail.com">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 8 7.5 5 7.5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  Email Me
+                </a>
+                <button class="btn btn--quiet" type="button" id="copyBtn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  Copy username
+                </button>
+              </div>
+
+              <a class="contact__join" data-invite href="https://discord.gg/zepto" target="_blank" rel="noopener noreferrer">
+                <span class="contact__join-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8.6 6.4a14 14 0 0 1 6.8 0M7.1 18.5c-1.3-1.9-2.2-4.2-2.4-6.8.9-1.1 2-2 3.2-2.5l.7 1.1a11 11 0 0 1 6.8 0l.7-1.1c1.2.5 2.3 1.4 3.2 2.5-.2 2.6-1.1 4.9-2.4 6.8M9.5 14.6h.01M14.5 14.6h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="contact__join-copy">
+                  <strong>Join My Discord Server</strong>
+                  <span>Zepto — <span data-bind="community.vanity">discord.gg/zepto</span></span>
+                </span>
+                <span class="contact__join-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+
+              <p class="contact__note" data-bind="contact.note">
+                Open to freelance builds, long-term collaborations and community work.
+              </p>
+            </div>
+
+            <div class="contact__formwrap">
+              <div class="contact__formhead">
+                <p class="contact__form-k">Send a message</p>
+                <p class="contact__form-lead">Straight to my inbox — no email app needed.</p>
+              </div>
+
+              <form class="form" id="contactForm" novalidate>
+                <div class="form__row">
+                  <div class="field">
+                    <label for="cfName">Full Name</label>
+                    <input id="cfName" name="name" type="text" autocomplete="name" placeholder="Your name" required maxlength="80" aria-describedby="cfNameError" />
+                    <p class="field__error" id="cfNameError" aria-live="polite"></p>
+                  </div>
+                  <div class="field">
+                    <label for="cfEmail">Email Address</label>
+                    <input id="cfEmail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" aria-describedby="cfEmailError" />
+                    <p class="field__error" id="cfEmailError" aria-live="polite"></p>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="cfSubject">Subject</label>
+                  <input id="cfSubject" name="subject" type="text" autocomplete="off" placeholder="What can I help with?" required maxlength="120" aria-describedby="cfSubjectError" />
+                  <p class="field__error" id="cfSubjectError" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="cfMessage">Message</label>
+                  <textarea id="cfMessage" name="message" rows="5" placeholder="Tell me about your project or community…" required maxlength="5000" aria-describedby="cfMessageError"></textarea>
+                  <p class="field__error" id="cfMessageError" aria-live="polite"></p>
+                </div>
+
+                <div class="hp" aria-hidden="true">
+                  <label for="cfWebsite">Website</label>
+                  <input id="cfWebsite" name="website" type="text" tabindex="-1" autocomplete="off" />
+                </div>
+                <input type="hidden" name="startedAt" id="cfStartedAt" />
+
+                <button class="btn btn--primary form__submit" type="submit" id="contactSubmit">
+                  <span class="btn__spinner" aria-hidden="true"></span>
+                  <svg class="btn__send" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3 10.5 13.5M21 3l-6.5 18-4-8.5L2 8.5 21 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span data-submit-label>Send Message</span>
+                </button>
+
+                <div class="form__status" id="formStatus" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+                <p class="form__privacy" data-bind="contact.privacy">Your details are only used to reply to your message.</p>
+              </form>
+
+              <noscript>
+                <p class="form__noscript">
+                  This form needs JavaScript. You can email me directly at
+                  <a href="mailto:mannansonava22@gmail.com">mannansonava22@gmail.com</a>.
+                </p>
+              </noscript>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="ftr">
+    <div class="shell">
+      <div class="ftr__grid">
+        <div class="ftr__brand">
+          <a class="logo logo--ftr" href="#home" aria-label="Dante — back to top">
+            <span class="logo__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7.5-4.6-7.5-9.7A4.3 4.3 0 0 1 12 7.9a4.3 4.3 0 0 1 7.5 2.9c0 5.1-7.5 9.7-7.5 9.7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="logo__text" data-bind="identity.displayName">Dante.&lt;3</span>
+          </a>
+          <p class="ftr__role" data-bind="identity.professionalTitle">Discord Developer | Server Architect | Bot Creator</p>
+          <p class="ftr__blurb">
+            Independent Discord all-rounder — bots, servers, custom systems and design, built end to end.
+          </p>
+          <div class="ftr__socials" data-socials="footer"></div>
+        </div>
+
+        <nav class="ftr__col" aria-label="Footer">
+          <p class="ftr__k">Explore</p>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="ftr__col">
+          <p class="ftr__k">Get in touch</p>
+          <ul>
+            <li><button class="ftr__link" type="button" data-copy="identity.handle">Discord — @<span data-bind="identity.handle">manii_.0</span></button></li>
+            <li><a href="mailto:mannansonava22@gmail.com" data-bind="identity.email" data-mail>mannansonava22@gmail.com</a></li>
+            <li><a href="https://discord.gg/zepto" data-invite>Zepto — discord.gg/zepto</a></li>
+            <li><span class="ftr__muted">Remote · worldwide</span></li>
+          </ul>
+        </div>
+
+        <div class="ftr__col">
+          <p class="ftr__k">Status</p>
+          <ul>
+            <li><span class="status-line"><span class="dot" aria-hidden="true"></span><span data-bind="identity.availability.short">Open for work</span></span></li>
+            <li><span class="ftr__muted">Experience — <span data-bind="identity.experience">2–3 years</span></span></li>
+            <li><span class="ftr__muted">Local time — <b id="clock">—</b></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ftr__bottom">
+        <p>© <span id="year">2026</span> <span data-bind="identity.displayName">Dante.&lt;3</span>. Designed &amp; built by me.</p>
+        <a class="ftr__top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <span id="toastText">Copied to clipboard</span>
+  </div>
+
+  <noscript>
+    <style>
+      [data-reveal], [data-skills], [data-services], [data-filters], [data-projects] { opacity: 1 !important; }
+      .mnav { display: none; }
+    </style>
+  </noscript>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
